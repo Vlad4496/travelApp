@@ -19,7 +19,7 @@ class NavBar extends LitElement {
       nav ul {
         display: flex;
         align-items: center;
-        margin-top: 2.2em;
+        margin-top: 2em;
       }
       nav ul li {
         list-style-type: none;
@@ -38,19 +38,20 @@ class NavBar extends LitElement {
         text-decoration: none;
         color: black;
       }
-      nav ul input {
+      nav .bookBtn input {
+        margin-top: 2em;
         padding: 1em 2em;
         border-radius: 1em;
         font-size: 1.3em;
         border-style: none;
-        background-color: #5b6bb1;
+        background-color: #3e4875;
         color: white;
         font-weight: 600;
         cursor: pointer;
       }
-      nav ul input:hover {
+      nav .bookBtn input:hover {
         background-color: #d0d3df;
-        color: #5b6bb1;
+        color: #3e4875;
         transition: 1s;
       }
 
@@ -71,7 +72,7 @@ class NavBar extends LitElement {
         border-radius: 1em;
         border-style: none;
         color: white;
-        background-color: #5b6bb1;
+        background-color: #3e4875;
         font-size: large;
         position: relative;
         left: 50%;
@@ -82,7 +83,7 @@ class NavBar extends LitElement {
 
       .hero input:hover {
         background-color: white;
-        color: #5b6bb1;
+        color: #3e4875;
         transition: 1s;
       }
       .parallax {
@@ -93,6 +94,7 @@ class NavBar extends LitElement {
         height: 80vh;
         width: 100vw;
       }
+
       @media screen and (min-width: 1201px) {
         nav {
           width: 80%;
@@ -119,22 +121,33 @@ class NavBar extends LitElement {
       }
       @media screen and (min-width: 481px) and (max-width: 768px) {
         nav {
-          text-align: center;
+          flex-direction: column;
           margin-top: 5em;
+          text-align: center;
         }
         nav ul {
-          font-size: 1em;
           flex-direction: column;
+          margin: -2em;
+          width: 100vw;
+          overflow-x: hidden;
         }
+        nav .bookBtn input {
+          margin-left: 0.5em;
+        }
+
         nav ul li {
           margin-left: 1em;
           line-height: 1.5em;
           display: inline-block;
         }
-
+        .hero {
+          margin-top: 13em;
+        }
         .hero h1 {
-          font-size: 1.8em;
-          margin-top: 10em;
+          font-size: 2em;
+        }
+        .hero input {
+          margin-top: 0;
         }
       }
       @media screen and (min-width: 320px) and (max-width: 480px) {
@@ -146,13 +159,13 @@ class NavBar extends LitElement {
         nav ul {
           flex-direction: column;
           margin: -2em;
+          width: 100vw;
+          overflow-x: hidden;
         }
         nav ul li {
           line-height: 1.5em;
         }
-        nav ul input {
-          margin-right: 1.5em;
-        }
+
         .hero {
           margin-top: 13em;
         }
@@ -181,14 +194,16 @@ class NavBar extends LitElement {
       <nav>
         <h1>Travela</h1>
         <ul>
-          <li><a href="/">Home</a></li>
+          <li><a href="/" class="active">Home</a></li>
           <li><a href="#">Tour</a></li>
           <li><a href="#">Hotel</a></li>
           <li><a href="/places-to-travel">Places to travel</a></li>
           <li><a href="/add-destination">Add Destination</a></li>
           <li><a href="#contacts">Contact Us</a></li>
-          <input type="button" value="Book now" />
         </ul>
+        <div class="bookBtn">
+          <input type="button" value="Book now" />
+        </div>
       </nav>
       <div class="hero">
         <h1>Discover the world with us</h1>

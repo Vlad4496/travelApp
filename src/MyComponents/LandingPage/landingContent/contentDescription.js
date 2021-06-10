@@ -14,7 +14,7 @@ class ContentDescription extends LitElement {
         width: 50vw;
         height: 100vh;
         border-radius: 0% 200% 70% 0%;
-        background-color: #5b6bb1;
+        background-color: #3e4875;
       }
       .contentDescription .mainContent {
         width: 50vw;
@@ -37,7 +37,7 @@ class ContentDescription extends LitElement {
         padding: 1.5em 3em;
         border-radius: 1.5em;
         color: white;
-        background-color: #5b6bb1;
+        background-color: #3e4875;
         font-weight: bold;
         font-size: 1.2em;
         cursor: pointer;
@@ -48,6 +48,11 @@ class ContentDescription extends LitElement {
         background-color: green;
         transition: 1s;
         border: none;
+      }
+      @media screen and (min-width: 1025px) {
+        .mainContent input[type='button'] {
+          margin-bottom: 2em;
+        }
       }
       @media screen and (min-width: 769px) and (max-width: 1024px) {
         .contentDescription {
@@ -65,7 +70,7 @@ class ContentDescription extends LitElement {
           margin: 0;
           margin-top: 1em;
         }
-        input[type='button'] {
+        .mainContent input[type='button'] {
           margin-bottom: 2em;
         }
       }
@@ -86,7 +91,7 @@ class ContentDescription extends LitElement {
           margin-top: 1em;
           font-size: 0.7em;
         }
-        input[type='button'] {
+        .mainContent input[type='button'] {
           margin-bottom: 2em;
         }
       }
@@ -107,8 +112,11 @@ class ContentDescription extends LitElement {
           margin-top: 1em;
           font-size: 0.7em;
         }
-        input[type='button'] {
+        .mainContent input[type='button'] {
           margin-bottom: 2em;
+        }
+        .contentDescription .mainContent h1 {
+          font-size: 4em;
         }
       }
     `;
@@ -131,9 +139,9 @@ class ContentDescription extends LitElement {
       <div class="mainContent">
         <h1>Amazing places to <br />enjoy your travel</h1>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br />
-          Veritatis velit incidunt ut deleniti voluptates <br />
-          consectetur nemo reprehenderit culpa dolor laborum.
+          New experiences. Routine is the killer of the soul, and there's <br />
+          nothing better than the feeling of experiencing something <br />
+          new in a new place
         </p>
         <input type="button" value="Explore More" />
       </div>
