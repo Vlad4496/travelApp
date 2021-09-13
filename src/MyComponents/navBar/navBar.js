@@ -195,11 +195,9 @@ class NavBar extends LitElement {
         <h1>Travela</h1>
         <ul>
           <li><a href="/">Home</a></li>
-          <li><a href="#">Tour</a></li>
-          <li><a href="#">Hotel</a></li>
           <li><a href="/places-to-travel">Places to travel</a></li>
           <li><a href="/add-destination">Add Destination</a></li>
-          <li><a href="#contacts">Contact Us</a></li>
+          <li><a href="/contact">Contact Us</a></li>
         </ul>
         <div class="bookBtn">
           <input type="button" value="Book now" />
@@ -207,7 +205,9 @@ class NavBar extends LitElement {
       </nav>
       <div class="hero">
         <h1>Discover the world with us</h1>
-        <input type="button" value="Start Tour" />
+        <a href="/places-to-travel">
+          <input type="button" value="Start Tour" />
+        </a>
       </div>
     </header>`;
   }

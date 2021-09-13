@@ -5,6 +5,7 @@ import './MyComponents/footer/footer';
 import './MyComponents/LandingPage/landingContent/DestinationForm';
 import './MyComponents/LandingPage/landingContent/travelCard';
 import './MyComponents/LandingPage/LandingPage';
+import './MyComponents/LandingPage/landingContent/contactUs';
 
 export class TravelApp extends LitElement {
   static get styles() {
@@ -25,6 +26,7 @@ export class TravelApp extends LitElement {
         component: 'travel-card',
       },
       { path: '/add-destination', component: 'destination-form' },
+      { path: '/contact', component: 'contact-component' },
       { path: '(.*)', component: 'landing-page' },
     ]);
   }
