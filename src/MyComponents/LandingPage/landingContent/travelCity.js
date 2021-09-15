@@ -34,8 +34,6 @@ class TravelCity extends LitElement {
   static get properties() {
     return {
       cityTravel: { type: Object },
-      destionationId: { type: String },
-      hotels: { type: Object },
     };
   }
 
