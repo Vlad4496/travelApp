@@ -2,7 +2,7 @@
   <img width="200" src="https://open-wc.org/hero.png"></img>
 </p>
 
-# [My live link](https://travelatravelapp.netlify.app/)
+# [My live link](https://vlad-travela-app.netlify.app/)
 
 ## Travel App
 
@@ -20,7 +20,7 @@ Click on Add Destination from the Nav Menu - The form has a validator and the in
 
 I used Lion Web Components, for inputs, forms and buttons. Validator that requires Romania for the Location's name.
 
-You can see the demo by clicking the link. https://travelatravelapp.netlify.app/
+You can see the demo by clicking the link. https://vlad-travela-app.netlify.app/
 
 ## Scripts
 
